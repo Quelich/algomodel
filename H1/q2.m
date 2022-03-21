@@ -41,12 +41,13 @@ M1 = L + (sigma * I);
 % RESULT
 v1 = eig(M1); 
 %% Part D
-[V1, D1] = eigs(L, 10708);
+[V1, D1] = eigs(L,10708);
 % Find eigenvalues to calculate eigenvectors
 D1 = D1^20;
-d1 = diag(D1);
-% Eigenvectors
-X = [];
+tic
+result = V1 .* D1 .* V1^-1;
+toc
+
 
 
 
