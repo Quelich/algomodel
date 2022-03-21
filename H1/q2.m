@@ -44,8 +44,9 @@ v1 = eig(M1);
 [V1, D1] = eigs(L,10708);
 % Find eigenvalues to calculate eigenvectors
 D1 = D1^20;
-tic
 result = V1 .* D1 .* V1^-1;
+tic
+[V2,D2] = eigs(result);
 toc
 
 
