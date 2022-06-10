@@ -1,0 +1,31 @@
+clc, clear;
+
+
+% Mesh grid
+x1 = linspace(-100, 100, 1000);
+x2 = linspace(-100, 100, 1000);
+[Y, X] = meshgrid(x2,x1);
+
+% Initial Point
+x0 = -3;
+y0 = 5;
+
+% Parametrization
+dx = 0.001;
+dy = 0.001;
+alpha = 0.1; % change to lambda
+
+% f(x)
+f = @(x1,x2) 3.*x1.^2 + 6.*x2.^4;
+F = f(X,Y);
+
+surf(x1,x2, F');
+shading interp;
+
+i = 100;
+g = 
+% Iterations
+while norm(g) > i
+
+
+end
