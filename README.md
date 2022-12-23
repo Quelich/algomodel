@@ -1,9 +1,13 @@
 # algo-modelling
 The source code and the papers of Mathematical Modelling problem set.
+
+The motivation of this repository is to optimize the way of large amount of data.
+
 # Methods
+- Eigen Decomposition
 - Constrained Linear Optimization
 - Linear Recurrences
-- Laplacian
+- Laplacian Matrix
 - Convex Optimization
 - Conjugate Gradient Method
 - Positive Definiteness
